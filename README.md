@@ -1,15 +1,35 @@
-# React + TypeScript + Vite
+# R3F Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Three Fiber (R3F) を使った3Dグラフィックスの練習プロジェクトです。
 
-Currently, two official plugins are available:
+## 技術スタック
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - UI フレームワーク
+- **React Three Fiber (R3F)** - Three.js の React レンダラー
+- **Three.js** - 3D グラフィックスライブラリ
+- **TypeScript 5.9** - 型安全性（strict mode 有効）
+- **Vite 7** - ビルドツール・開発サーバー
+- **Tailwind CSS v4** - スタイリング
+- **Bun** - パッケージマネージャー・ランタイム
+- **Ultracite** - コード品質ツール（Oxlint + Oxfmt）
 
-## React Compiler
+## セットアップ
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# 依存関係のインストール
+bun install
+
+# 開発サーバーの起動
+bun run dev
+```
+
+## 開発コマンド
+
+- `bun run dev` - 開発サーバーを起動
+- `bun run build` - プロダクションビルドを作成
+- `bun run preview` - ビルドしたアプリケーションをプレビュー
+- `bun run fix` - Ultracite でコードを自動修正（型チェック付き）
+- `bun run check` - Ultracite でコードをチェック
 
 ## Expanding the ESLint configuration
 
